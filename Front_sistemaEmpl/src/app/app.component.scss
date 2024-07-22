@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #FACC10;
+    width: 100%;
+    height: 100px;
+   
+
+    .navbar-ul{
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+       
+
+        .nav-item{
+            list-style-type: none;
+            padding: 30px;
+
+            .nav{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        
+    }
+}
+
+.title-h1{
+    display: flex;
+    justify-content: center;
+    margin: 1.5%;
+}
+
+.h2-listaEmpleados-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 70%;
+}

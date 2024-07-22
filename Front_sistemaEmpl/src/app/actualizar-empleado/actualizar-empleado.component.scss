@@ -1,0 +1,33 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 5%;
+    height: 300px;
+    margin-left: 15%;
+    border-radius: 2rem;
+    background-color: #FBFCFC;
+    box-shadow: 10px 10px 5px #888888;;
+}
+
+.bc-form-field{
+    
+    margin-top: 10px;
+}
+
+.bc-form{
+   
+   width: 50%;
+   margin-top: 2%;
+}
+
+.bc-button{
+   
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.form-actualizar-empleado{
+    width: 50%;
+}

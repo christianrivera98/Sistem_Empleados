@@ -1,0 +1,56 @@
+<h2 class="h2-home">Edición de empleado</h2>
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()" #empleadoForm="ngForm" class="form-actualizar-empleado">
+    <bc-form-field class="bc-form-field">
+      <input
+        bc-input
+        id="nombre"
+        placeholder="Nombre"
+        type="text"
+        required
+        [(ngModel)]="empleado.nombre"
+        name="nombre"
+      />
+      <span>Este campo es obligatorio *</span>
+    </bc-form-field>
+    <!-- <div class="alert alert-danger" *ngIf= "nombre.invalid && (nombre.dirty || nombre.touched)">
+          <div *ngIf = "nombre.errors.required">
+            Digite su nombre por favor
+          </div>
+          <div *ngIf = "nombre.errors.minlength">
+            El nombre tiene que contener como minimo 4 caracteres
+          </div>
+          <div *ngIf = "nombre.errors.maxlength">
+            El nombre tiene que tener como maximo 10 caracteres
+          </div>
+        </div> -->
+
+    <bc-form-field class="bc-form-field">
+      <input
+        bc-input
+        id="apellido"
+        placeholder="Apellido"
+        type="text"
+        required
+        [(ngModel)]="empleado.apellido"
+        name="apellido"
+      />
+      <span>Este campo es obligatorio *</span>
+    </bc-form-field>
+
+    <bc-form-field class="bc-form-field">
+      <input
+        bc-input
+        id="email"
+        placeholder="Correo"
+        type="email"
+        required
+        [(ngModel)]="empleado.email"
+        name="email"
+      />
+      <span>Este campo es obligatorio *</span>
+    </bc-form-field>
+
+    <button bc-button class="bc-button" type="submit">Guardar</button>
+  </form>
+</div>

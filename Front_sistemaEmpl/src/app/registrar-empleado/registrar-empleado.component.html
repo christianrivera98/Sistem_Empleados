@@ -1,0 +1,49 @@
+<h2 class="h2-home">Registro de empleados</h2>
+
+<div class="form-container">
+  <form class="bc-form" (ngSubmit)="onSubmit()">
+    <h5>Ingrese los datos del empleado:</h5>
+    <bc-form-field class="bc-form-field">
+      <input
+        bc-input
+        id="nombre"
+        placeholder="Nombre"
+        type="text"
+        required
+        [(ngModel)]="empleado.nombre"
+        name="nombre"
+      />
+      <span>Este campo es obligatorio *</span>
+    </bc-form-field>
+
+    <bc-form-field class="bc-form-field">
+      <input
+        bc-input
+        id="apellido"
+        placeholder="Apellido"
+        type="text"
+        required
+        [(ngModel)]="empleado.apellido"
+        name="apellido"
+      />
+      <span>Este campo es obligatorio *</span>
+    </bc-form-field>
+
+    <bc-form-field class="bc-form-field">
+      <input
+        bc-input
+        id="email"
+        placeholder="Correo"
+        type="email"
+        required
+        [(ngModel)]="empleado.email"
+        name="email"
+      />
+      <span>Este campo es obligatorio *</span>
+    </bc-form-field>
+
+    <button bc-button class="bc-button" type="submit">
+      Registrar empleado
+    </button>
+  </form>
+</div>

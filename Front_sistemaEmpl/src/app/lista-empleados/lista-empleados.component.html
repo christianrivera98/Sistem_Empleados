@@ -1,0 +1,32 @@
+<h2 class="h2-home">Lista empleados</h2>
+<bc-table-container class="bc-col-12" > 
+    <bc-table-content>
+      <table caption="tabla" bc-table [selection]="true" [sort]="true" [pairPaginators]="true" [dropdownHtml]="true">
+        <thead>
+          <tr>
+            <th scope="row" bc-cell scope="col">Nombre </th>
+            <th scope="row" bc-cell scope="col">Apellido</th>
+            <th scope="row" bc-cell scope="col" >Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let empleado of empleados">
+            <td>{{empleado.nombre}}</td>
+            <td>{{empleado.apellido}}</td>
+            <td>{{empleado.email}}</td>
+            <td>
+              <button (click)="actualizarEmpleado(empleado.id)" bc-button class="bc-button-table" type="submit">
+                Actualizar empleado
+              </button>
+              <!-- <bc-icon  size="3xl"  name="edit" [ariaHidden]="false" ariaLabel="name"></bc-icon> -->
+              <button (click)="eliminarEmpleado(empleado.id)" bc-button class="bc-button-table" type="submit">
+                Eliminar empleado
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </bc-table-content>
+    <bc-table-footer>
+    </bc-table-footer>
+  </bc-table-container>

@@ -1,0 +1,15 @@
+<nav class="navbar" id="navbar-home">
+    <ul class="navbar-ul" id="navbar-ul-home">
+        <li class="nav-item" id="navbar-ul-li-home">
+            <a routerLink="empleados" routerLinkActive="active" class="nav" id="navbar-ul-li-a-home">Lista de empleados</a>
+        </li>
+        <li class="nav-item" id="navbar-ul-li-home">
+            <a routerLink="registrar-empleado" routerLinkActive="active" class="nav" id="navbar-ul-li-a-home">Registro de empleados</a>
+        </li>
+    </ul>
+</nav>
+
+<h1 class="title-h1" id="title-h1-home">{{title}}</h1>
+<div class="h2-listaEmpleados-container" id="h2-listaEmpleados-container">
+    <router-outlet></router-outlet>
+</div>
